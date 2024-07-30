@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.animate-slide {
+  display: flex;
+  animation: slide 80s linear infinite;
+}
