@@ -31,6 +31,15 @@ export const DropdownIcon = () => {
   );
 };
 
+export const RightCaretIcon = () => (
+  <svg width="16" height="17" viewBox="0 0 16 17" fill="none">
+    <path
+      d="M11 8.50004L6.5 3.88124L6.5 13.1188L11 8.50004Z"
+      fill="#40196D"
+    ></path>
+  </svg>
+);
+
 export const ProfileIcon = () => {
   return (
     <svg

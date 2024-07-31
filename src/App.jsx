@@ -25,7 +25,7 @@ const App = () => {
         <div className="relative">
           {/* TOP BAR COOKIES POP UP BOX */}
           {isCookiesVisible ? (
-            <div className="z-50 flex gap-4 items-center justify-between py-2 pl-5 pr-5 md:hidden fixed top-0 w-full bg-white">
+            <div className="z-50 flex gap-4 items-center max-w-[1500px] mx-auto justify-between py-2 pl-5 pr-5 md:hidden fixed top-0 w-full  bg-white">
               <p className="text-[14px]">
                 By using this website you agree to our{" "}
                 <span className="underline text-[#40196D]">
@@ -57,7 +57,7 @@ const App = () => {
           <Cards />
           <Section />
         </div>
-        <div className="w-full">
+        <div className="w-full max-w-[1500px] mx-auto">
           <Testimonial />
           <Sponsor />
           <Partners />

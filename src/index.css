@@ -28,6 +28,35 @@
   display: flex;
   animation: slide 80s linear infinite;
 }
+.dropdown-content {
+  display: none;
+  max-height: 300px;
+}
+.dropdown:hover {
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+    max-width: 200px;
+  }
+}
+.dropdown:hover::after {
+  background-color: rgba(64, 25, 109, 0.2);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 100vh;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
 /* Custom styles for grid layout */
 @media (min-width: 768px) {
   /* md breakpoint */
