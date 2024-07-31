@@ -44,11 +44,15 @@ const App = () => {
             ""
           )}
         </div>
-        <HeaderSection />
+        <HeaderSection isCookiesVisible={isCookiesVisible} />
       </header>
 
       <main>
-        <div className="bg-white flex flex-col mx-auto max-w-[1180px] px-[2rem]  pt-[70px] md:px-16 pb-16 gap-[50px]">
+        <div
+          className={`bg-white flex flex-col mx-auto max-w-[1180px] px-[2rem] ${
+            isCookiesVisible ? "pt-40" : "pt-[70px]"
+          }  md:px-16 pb-16 gap-[50px]`}
+        >
           <HeroSection />
           <Cards />
           <Section />

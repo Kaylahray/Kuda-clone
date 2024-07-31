@@ -1,7 +1,12 @@
+/* eslint-disable react/prop-types */
 import { DropdownIcon, KudaLogo, ProfileIcon } from "./Icons";
 
-const HeaderSection = () => (
-  <div className="w-full p-5 shadow flex items-center h-[58px] min-w-[992px]:h-[70px] z-[999] justify-center fixed top-0 left-0 bg-white">
+const HeaderSection = ({ isCookiesVisible }) => (
+  <div
+    className={`w-full p-5 shadow flex items-center h-[58px] min-w-[992px]:h-[70px] z-[999] justify-center fixed ${
+      isCookiesVisible ? "top-20 left-0" : "top-0 left-0"
+    }  bg-white`}
+  >
     <div className="w-full hidden sm:hidden md:hidden min-[992px]:flex items-center justify-between">
       <div className="flex items-center justify-start gap-14">
         <a href="/" className="no-underline min-w-[100px]">
