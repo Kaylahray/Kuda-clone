@@ -50,19 +50,19 @@ const App = () => {
       <main>
         <div
           className={`bg-white flex flex-col mx-auto max-w-[1180px] px-[2rem] ${
-            isCookiesVisible ? "pt-40" : "pt-[80px]"
+            isCookiesVisible ? "pt-40" : "pt-[80px] lg:pt-[40px]"
           }  md:px-16 pb-16 gap-[50px]`}
         >
           <HeroSection />
           <Cards />
           <Section />
-          <Testimonial />
         </div>
         <div className="w-full">
+          <Testimonial />
           <Sponsor />
           <Partners />
         </div>
-        <div className="bg-white flex flex-col mx-auto max-w-[1180px] mt-[70px]   px-[1rem] pt-[70px] md:px-16 pb-16 gap-[50px]">
+        <div className="bg-white flex flex-col mx-auto max-w-[1180px] mt-[70px] px-[1rem] pt-[70px] md:px-16 pb-16 gap-[50px]">
           <PricingTable />
           <More />
           <MoneyAppSection />
