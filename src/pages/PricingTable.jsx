@@ -2,7 +2,7 @@ import { data } from "../data/pricing-table";
 import { kuda, minus, plus } from "../assets";
 const PricingTable = () => {
   return (
-    <div className="overflow-x-auto px-[40px] lg:px-[130px] pt-[38] pb-[77px]">
+    <div className="overflow-x-auto">
       <h3 className="text-center mb-[55px] text-[#40196D] text-[35px] font-black leading-[49.68px]">
         Choose the freedom you need.
       </h3>

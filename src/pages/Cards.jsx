@@ -29,7 +29,7 @@ const cardData = [
 
 const Cards = () => {
   return (
-    <div className="grid px-[40px] lg:px-[130px] mx-auto grid-cols-1 md:grid-cols-6 grid-rows-2 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-6 grid-rows-2 gap-8">
       {cardData.map((card, index) => (
         <div key={index} className={card.colSpan || "md:col-span-2"}>
           <Card icon={card.icon} text={card.text} />

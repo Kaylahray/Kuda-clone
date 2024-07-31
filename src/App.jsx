@@ -12,6 +12,7 @@ import More from "./pages/More";
 import MoneyAppSection from "./pages/MoneyAppSection";
 import Footer from "./pages/Footer";
 import FixedFooter from "./components/FixedFooter";
+
 const App = () => {
   const [isCookiesVisible, setIsCookiesVisible] = useState(true);
 
@@ -46,20 +47,30 @@ const App = () => {
         <HeaderSection />
       </header>
 
-      <main className="bg-white flex flex-col gap-[50px]">
-        <HeroSection />
-        <Cards />
-        <Section />
-        <Testimonial />
-        <Sponsor />
-        <Partners />
-        <PricingTable />
-        <More />
-        <MoneyAppSection />
-        <Footer />
+      <main>
+        <div className="bg-white flex flex-col mx-auto max-w-[1180px] px-[2rem]  pt-[70px] md:px-16 pb-16 gap-[50px]">
+          <HeroSection />
+          <Cards />
+          <Section />
+          <Testimonial />
+        </div>
+        <div className="w-full">
+          <Sponsor />
+          <Partners />
+        </div>
+        <div className="bg-white flex flex-col mx-auto max-w-[1180px] mt-[70px]   px-[1rem] pt-[70px] md:px-16 pb-16 gap-[50px]">
+          <PricingTable />
+          <More />
+          <MoneyAppSection />
+        </div>
+        <hr />
+        <div className="bg-white flex flex-col mx-auto max-w-[1180px] mt-[70px] pt-[70px] md:px-16  px-[1rem] pb-16 gap-[50px]">
+          <Footer />
+        </div>
         <FixedFooter />
+
         {isCookiesVisible ? (
-          <div className="z-50 rounded-lg flex gap-4 items-center justify-between py-2 px-4 max-md:hidden fixed bottom-10 left-1/2 transform -translate-x-1/2 w-[470px] border-[#e3e3e3] border-[1px] bg-white">
+          <div className="z-50  rounded-lg flex gap-4 items-center justify-between py-2 px-4 max-md:hidden fixed bottom-10 left-1/2 transform -translate-x-1/2 w-[470px] border-[#e3e3e3] border-[1px] bg-white">
             <p className="text-[14px]">
               By using this website you agree to our{" "}
               <span className="underline text-[#40196D]">

@@ -1,6 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.brand {
+  height: 20px;
+  width: auto;
+}
+@media (max-width: 768px) {
+  .brand {
+    height: 16px;
+  }
+}
 
 @keyframes slide {
   0% {
@@ -18,4 +27,19 @@
 .animate-slide {
   display: flex;
   animation: slide 80s linear infinite;
+}
+/* Custom styles for grid layout */
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .md\:grid-cols-custom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .lg\:grid-cols-custom {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
 }

@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      lineHeight: {
+        custom: "1px",
+      },
+      fontFamily: {
+        muli: ["Muli", "sans-serif"],
+      },
       backgroundImage: {
         "gradient-radial":
           "radial-gradient(var(--tw-gradient-stops))",

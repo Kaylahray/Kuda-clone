@@ -17,9 +17,8 @@ import {
 const Footer = () => {
   return (
     <footer>
-      <hr />
       {/* FIRST FOOTER SECTION */}
-      <section className="mt-14 mb-16 flex flex-col md:flex-row max-w-[90%] sm:max-w-[94%] md:max-w-[90%] lg:max-w-[80%] mx-auto gap-8 lg:gap-20">
+      <section className=" mb-16 flex flex-col md:flex-row max-w-[90%] sm:max-w-[94%] md:max-w-[90%] lg:max-w-[80%] mx-auto gap-8 lg:gap-20">
         {/* LOGO */}
         <div>
           <img
@@ -80,7 +79,7 @@ const Footer = () => {
       </section>
 
       {/* SECOND FOOTER SECTION */}
-      <section className="max-w-[90%] sm:max-w-[94%] md:max-w-[90%] lg:max-w-[80%] mb-14 mx-auto ">
+      <section className="max-w-[90%] sm:max-w-[94%] md:max-w-[90%]  mb-14 mx-auto ">
         <div className="flex gap-[6px] mb-4 max-[400px]:justify-center">
           <img
             src={appleStore}

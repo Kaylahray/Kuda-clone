@@ -2,7 +2,7 @@ import { tc, forum, fintech, bbc, euromoney, cnbc } from "../assets";
 
 const Sponsor = () => {
   return (
-    <div className="flex max-w-[1500px] px-[60px] pt-[86.4px] pb-0 justify-between items-center">
+    <div className="flex max-w-[1500px] px-[60px] py-[86.4px]  justify-between items-center">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="mt-6">
           <ul className="flex gap-x-10 gap-y-6 flex-wrap items-center justify-center md:gap-x-16">
