@@ -50,7 +50,7 @@ const App = () => {
       <main>
         <div
           className={`bg-white flex flex-col mx-auto max-w-[1180px] px-[2rem] ${
-            isCookiesVisible ? "pt-40" : "pt-[80px] lg:pt-[40px]"
+            isCookiesVisible ? "pt-40 lg:pt-20" : "pt-[80px]"
           }  md:px-16 pb-16 gap-[50px]`}
         >
           <HeroSection />
